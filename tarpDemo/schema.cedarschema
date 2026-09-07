@@ -201,4 +201,12 @@ namespace Jans {
     resource: [Application, SecretDocument],
     context: Context
   };
+
+  action "test" appliesTo {
+    principal: [User],
+    resource: [Application],
+    context: {
+      current_time: __cedar::String
+    }
+  };
 }

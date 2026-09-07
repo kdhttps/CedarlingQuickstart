@@ -116,6 +116,8 @@ namespace Jans {
     validated_at?: Long
   } tags Set<String>;
 
+  entity test;
+
   action "Compare" appliesTo {
     principal: [User, Workload],
     resource: [Application],

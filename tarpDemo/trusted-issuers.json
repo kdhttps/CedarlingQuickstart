@@ -1,0 +1,36 @@
+{
+    "Jans::Access_token": {
+        "type": "jwt",
+        "issuer": "Jans",
+        "configuration_endpoints": {
+            "configuration": "https://test-jans.gluu.info/.well-known/openid-configuration"
+        },
+        "token_id": "jti",
+        "required_claims": [
+            "jti",
+            "iss",
+            "aud",
+            "sub",
+            "exp",
+            "nbf"
+        ]
+    },
+    "Jans::id_token": {
+        "type": "jwt",
+        "issuer": "Jans",
+        "configuration_endpoints": {
+            "configuration": "https://test-jans.gluu.info/.well-known/openid-configuration"
+        },
+        "token_id": "jti",
+        "required_claims": []
+    },
+    "Jans::Userinfo_token": {
+        "type": "jwt",
+        "issuer": "Jans",
+        "configuration_endpoints": {
+            "configuration": "https://test-jans.gluu.info/.well-known/openid-configuration"
+        },
+        "token_id": "jti",
+        "required_claims": []
+    }
+}
